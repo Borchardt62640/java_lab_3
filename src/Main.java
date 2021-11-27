@@ -2,6 +2,19 @@ import java.util.Scanner;
 
 public class Main {
 
+    enum LiczbyEnum {
+        ZERO, JEDEN, DWA, TRZY, CZTERY, PIEC, SZESC, SIEDEM, OSIEM, DZIEWIEC
+    }
+    enum StatusEnum {
+        KONTYNUUJEMY(true), KONIEC(false);
+
+        boolean wielkosc;
+
+        StatusEnum(boolean czy) {
+            wielkosc = czy;
+        }
+    }
+
     public static void main(String[] args) {
 
         /* ćw 1 enum-y */
@@ -16,7 +29,55 @@ public class Main {
         do podanych cyfr przez użytkownika,
         g) gdy użytkownik wciśnie 0 ma wyświetlić się status KONIEC w innym wypadku KONTYNUUJEMY :),
         */
+        Scanner sc = new Scanner(System.in);
+        System.out.println("kolor " + StatusEnum.KONTYNUUJEMY.wielkosc);
+        boolean war = true;
+        while(war){
+            switch(Integer.parseInt(sc.next())){
+                case 0:
+                    System.out.println(LiczbyEnum.ZERO);
+                    war = StatusEnum.KONTYNUUJEMY.wielkosc;
+                    break;
+                case 1:
+                    System.out.println(LiczbyEnum.ZERO);
+                    war = StatusEnum.KONTYNUUJEMY.wielkosc;
+                    break;
+                case 2:
+                    System.out.println(LiczbyEnum.DWA);
+                    war = StatusEnum.KONTYNUUJEMY.wielkosc;
+                    break;
+                case 3:
+                    System.out.println(LiczbyEnum.TRZY);
+                    war = StatusEnum.KONTYNUUJEMY.wielkosc;
+                    break;
+                case 4:
+                    System.out.println(LiczbyEnum.CZTERY);
+                    war = StatusEnum.KONTYNUUJEMY.wielkosc;
+                    break;
+                case 5:
+                    System.out.println(LiczbyEnum.PIEC);
+                    war = StatusEnum.KONTYNUUJEMY.wielkosc;
+                    break;
+                case 6:
+                    System.out.println(LiczbyEnum.SZESC);
+                    war = StatusEnum.KONTYNUUJEMY.wielkosc;
+                    break;
+                case 7:
+                    System.out.println(LiczbyEnum.SIEDEM);
+                    war = StatusEnum.KONTYNUUJEMY.wielkosc;
+                    break;
+                case 8:
+                    System.out.println(LiczbyEnum.OSIEM);
+                    war = StatusEnum.KONTYNUUJEMY.wielkosc;
+                    break;
+                case 9:
+                    System.out.println(LiczbyEnum.DZIEWIEC);
+                    war = StatusEnum.KONTYNUUJEMY.wielkosc;
+                    break;
+            }
 
+
+        }
         /* statusy i wybór ze switch case to najczęstsze użycia enumów, enumy są często używane
         * w różnego rodzaju listach, selectach jako krótkie opcje wyboru np. jako status A, X (Aktualny, Usunięty) */
 
