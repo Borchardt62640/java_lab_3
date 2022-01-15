@@ -14,5 +14,29 @@ public class Main {
             c) wyświetlić dane z tablicy, użyć pętli for lub forEach
             d) dane powinny być estetycznie przedstawione
          */
+
+        Student student = new Student();
+        Student student1 = new Student();
+        Student student2 = new Student();
+
+        student.bol1 = true;
+        student.int1 = 38;
+        student.str1 = "oqkkaksl";
+        student.str2 = "suuuuper";
+        student1.bol1 = false;
+        student1.int1 = 93;
+        student1.str1 = "lslslk";
+        student1.str2 = "huuu";
+        student2.bol1 = false;
+        student2.int1 = 993;
+        student2.str1 = "llsao";
+        student2.str2 = "iiaos";
+
+        Student[] tab = new Student[]{student, student1, student2};
+        for(Student zmienna : tab){
+            System.out.print(zmienna + " ");
+        }
+
+
     }
 }
