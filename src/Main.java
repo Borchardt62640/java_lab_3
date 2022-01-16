@@ -18,6 +18,15 @@ public class Main {
             d) wypisać wartości pól (za pomocą getterów),
             e) wywołać metody suma i róznica (obie wersje) z klasy punkt
         */
-
+        Punkt punktA = new Punkt(83);
+        punktA.toString();
+        Punkt punktB = new Punkt(9,3,65);
+        punktB.toString();
+        punktA.setpX(78);
+        punktA.toString();
+        punktA.getpZ();
+        punktA.suma();
+        punktA.roznica();
+        punktA.roznica(49,43 ,2);
     }
 }
